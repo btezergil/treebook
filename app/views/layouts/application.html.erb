@@ -2,13 +2,26 @@
 <html>
 <head>
   <title>Treebook</title>
-  <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="#">Treebook</a>
+			    <ul class="nav">
+			      <li class="active"><a href="#">Home</a></li>
+			      <li><%= link_to "All Statuses", statuses_path %></li>
+			      <li><a href="#">Link</a></li>
+			    </ul>
+		    </div>
+		</div>
+	</div>
+	<div class="container">
+		<%= yield %>
+	</div>
 
 </body>
 </html>
