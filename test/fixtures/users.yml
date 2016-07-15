@@ -3,3 +3,9 @@ berke:
   last_name: "Tezergil"
   email: "btezergil@hotmail.com"
   profile_name: "btezergil"
+
+mustafa:
+  first_name: "Mustafa"
+  last_name: "Tezergil"
+  email: "mstezergil@hotmail.com"
+  profile_name: "mstezergil"
